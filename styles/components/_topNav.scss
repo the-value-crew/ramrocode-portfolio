@@ -1,0 +1,31 @@
+.topNav {
+    position: relative;
+    z-index: 1000;
+    &Logo {
+        &TextName {
+            font-size: 1.4rem;
+            font-weight: 400;
+
+            @include media-breakpoint-up(md) {
+                font-size: 1.7rem;
+            }
+        }
+
+        &TextVersion {
+            font-size: 0.7rem;
+        }
+    }
+
+    &Links {
+        &Item {
+            margin-right: 2rem;
+            color: $color-secondary;
+            font-size: 1.05rem;
+
+            &:hover {
+                color: $color-primary;
+                text-decoration: none;
+            }
+        }
+    }
+}
