@@ -39,5 +39,5 @@ let heroSlider = new HeroSlider();
 setInterval(() => {
     let nextId = (heroSlider.currentSlide.id + 1) % 5;
     heroSlider.gotoSlide(nextId);
-}, 1000);
+}, 10000);
 
