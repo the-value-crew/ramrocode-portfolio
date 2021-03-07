@@ -6,8 +6,11 @@ div {
 
 #screen {
     position: relative;
-    max-width: 1200px;
     width: 98%;
     margin: 0 auto;
     padding-top: 1rem;
+
+    @include media-breakpoint-up(xl) {
+        width: 1200px; // bootstrap's "lg" size
+    }
 }

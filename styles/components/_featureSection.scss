@@ -1,0 +1,60 @@
+.featureSection {
+    margin-top: 5rem;
+
+    @include media-breakpoint-up(md) {
+        margin-top: 10rem;
+    }
+
+    &Pattern{
+        position: absolute;
+        left: calc(-1 * (100vw - 98%) / 2);
+
+        @include media-breakpoint-up(xl) {
+            left: calc(-1 * (100vw - 1200px) / 2); // from _core.scss (value of max width)
+        }
+    }
+
+    &Title {
+        font-size: 3rem;
+        margin-bottom: 3rem;
+        @include media-breakpoint-up(md) {
+            font-size: 4rem;
+        }
+    }
+
+    &Feature {
+        position: relative;
+        height: 15rem;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        text-align: center;
+
+        &.--one {
+            background-image: url("../../assets/blob_1.png");
+        }
+
+        &.--two {
+            background-image: url("../../assets/blob_2.png");
+        }
+
+        &.--three {
+            background-image: url("../../assets/blob_3.png");
+        }
+
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    &Desc {
+        font-size: 1.2rem;
+        color: $color-secondary;
+        margin-right: 2rem;
+        margin-left: 2rem;
+        margin-top: 2rem;
+    }
+}

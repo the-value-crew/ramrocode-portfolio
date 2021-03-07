@@ -10862,15 +10862,21 @@ div {
 
 #screen {
   position: relative;
-  max-width: 1200px;
   width: 98%;
   margin: 0 auto;
   padding-top: 1rem;
 }
 
+@media (min-width: 1200px) {
+  #screen {
+    width: 1200px;
+  }
+}
+
 .topNav {
   position: relative;
   z-index: 1000;
+  max-height: 50px;
 }
 
 .topNavLogoTextName {
@@ -10900,12 +10906,9 @@ div {
 }
 
 .heroSection {
-  position: absolute;
-  top: 0;
-  left: 50%;
   width: 90%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  margin: 0 auto;
+  margin-top: calc(-50px + -1rem);
   padding-top: 7rem;
 }
 
@@ -10976,5 +10979,74 @@ div {
     background-repeat: no-repeat;
     background-position-x: 100%;
   }
+}
+
+.featureSection {
+  margin-top: 5rem;
+}
+
+@media (min-width: 768px) {
+  .featureSection {
+    margin-top: 10rem;
+  }
+}
+
+.featureSectionPattern {
+  position: absolute;
+  left: calc(-1 * (100vw - 98%) / 2);
+}
+
+@media (min-width: 1200px) {
+  .featureSectionPattern {
+    left: calc(-1 * (100vw - 1200px) / 2);
+  }
+}
+
+.featureSectionTitle {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+  .featureSectionTitle {
+    font-size: 4rem;
+  }
+}
+
+.featureSectionFeature {
+  position: relative;
+  height: 15rem;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+}
+
+.featureSectionFeature.--one {
+  background-image: url("../../assets/blob_1.png");
+}
+
+.featureSectionFeature.--two {
+  background-image: url("../../assets/blob_2.png");
+}
+
+.featureSectionFeature.--three {
+  background-image: url("../../assets/blob_3.png");
+}
+
+.featureSectionFeature img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.featureSectionDesc {
+  font-size: 1.2rem;
+  color: #62667c;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  margin-top: 2rem;
 }
 /*# sourceMappingURL=main.css.map */

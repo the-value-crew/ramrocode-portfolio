@@ -1,6 +1,8 @@
 .topNav {
     position: relative;
     z-index: 1000;
+    max-height: 50px;
+    
     &Logo {
         &TextName {
             font-size: 1.4rem;

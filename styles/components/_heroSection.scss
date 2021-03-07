@@ -1,9 +1,7 @@
 .heroSection {
-    position: absolute;
-    top: 0;
-    left: 50%;
     width: 90%;
-    transform: translateX(-50%);
+    margin: 0 auto;
+    margin-top: calc(-50px + -1rem);
     padding-top: 7rem;
     @include media-breakpoint-up(md) {
         padding-top: 10rem;
