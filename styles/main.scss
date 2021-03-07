@@ -14,8 +14,9 @@ $primary: $color-primary;
 @import "./vendor/bootstrap/mixins";
 @import "./vendor/bootstrap/bootstrap.scss";
 
-@import "./components/core";
-@import "./components/topNav";
-@import "./components/heroSection";
-@import "./components/featureSection";
+@import "./core";
+@import "./topNav";
+@import "./heroSection";
+@import "./featureSection";
+@import "./roadmapSection";
 

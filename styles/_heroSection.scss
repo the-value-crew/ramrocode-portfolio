@@ -58,7 +58,7 @@
     }
 
     @include media-breakpoint-up(md) {
-        background-image: url("../../assets/hero_pattern.svg");
+        background-image: url("../assets/hero_pattern.svg");
         background-repeat: no-repeat;
         background-position-x: 100%;
     }
