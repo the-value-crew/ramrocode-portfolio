@@ -7,10 +7,11 @@
 
     &Pattern{
         position: absolute;
-        left: calc(-1 * (100vw - 98%) / 2);
+        right: calc(-1 * (100vw - 98%) / 2);
+        transform: translateY(-200%);
 
         @include media-breakpoint-up(xl) {
-            left: calc(-1 * (100vw - 1200px) / 2); // from _core.scss (value of max width)
+            right: calc(-1 * (100vw - 1200px) / 2); // from _core.scss (value of max width)
         }
     }
 
@@ -20,5 +21,18 @@
         @include media-breakpoint-up(md) {
             font-size: 4rem;
         }
+    }
+
+    &Subtitle{
+        font-size: 1.2rem;
+        color: $color-secondary;
+    }
+
+    &Image{
+        margin: 0 auto;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        width: 100%;
+        max-width: 540px;
     }
 }

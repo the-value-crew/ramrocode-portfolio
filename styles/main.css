@@ -11062,12 +11062,14 @@ div {
 
 .roadmapSectionPattern {
   position: absolute;
-  left: calc(-1 * (100vw - 98%) / 2);
+  right: calc(-1 * (100vw - 98%) / 2);
+  -webkit-transform: translateY(-200%);
+          transform: translateY(-200%);
 }
 
 @media (min-width: 1200px) {
   .roadmapSectionPattern {
-    left: calc(-1 * (100vw - 1200px) / 2);
+    right: calc(-1 * (100vw - 1200px) / 2);
   }
 }
 
@@ -11080,5 +11082,18 @@ div {
   .roadmapSectionTitle {
     font-size: 4rem;
   }
+}
+
+.roadmapSectionSubtitle {
+  font-size: 1.2rem;
+  color: #62667c;
+}
+
+.roadmapSectionImage {
+  margin: 0 auto;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  max-width: 540px;
 }
 /*# sourceMappingURL=main.css.map */
