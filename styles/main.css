@@ -10878,6 +10878,10 @@ div {
   }
 }
 
+a.noStyle {
+  text-decoration: none;
+}
+
 .topNav {
   position: relative;
   z-index: 1000;
@@ -11165,10 +11169,13 @@ div {
   -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
           box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
   margin: 1rem 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .usageSectionCard:hover {
   cursor: pointer;
+  margin-top: -0.015rem;
 }
 
 .usageSectionCardLeft {
