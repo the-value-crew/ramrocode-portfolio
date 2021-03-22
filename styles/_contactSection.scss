@@ -1,0 +1,26 @@
+.contactSection {
+    margin-top: 5rem;
+
+    @include media-breakpoint-up(md) {
+        margin-top: 7rem;
+    }
+
+    &Title {
+        font-size: 3rem;
+        margin-bottom: 3rem;
+        @include media-breakpoint-up(md) {
+            font-size: 4rem;
+        }
+    }
+
+    &Subtitle {
+        font-size: 1.2rem;
+        color: $color-secondary;
+    }
+
+    &Icon {
+        width: 3rem;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+}

@@ -13,7 +13,6 @@
 <body>
     <div id="screen">
 
-
         <nav class="topNav d-flex justify-content-between">
             <div class="topNavLogo d-flex align-self-center">
                 <img src="./assets/logo.svg" class="topNavLogoImage align-self-center mr-2">
@@ -27,7 +26,7 @@
                 <a href="#featureSection" class="topNavLinksItem">Features</a>
                 <a href="#roadmapSection" class="topNavLinksItem">Roadmap</a>
                 <a href="#usageSection" class="topNavLinksItem">In Action</a>
-                <a href="#" class="topNavLinksItem">Contact</a>
+                <a href="#contactSection" class="topNavLinksItem">Contact</a>
             </div>
         </nav>
 
@@ -82,12 +81,16 @@
         </section>
 
         <section class="featureSection text-center" id="featureSection">
+            <div class="featureSectionBackground"></div>
+            <img src="./assets/featuresSectionTopWave.svg" class="featureSectionTopWave">
+
+
             <h1 class="featureSectionTitle">Features</h1>
             <p class="featureSectionSubtitle mb-5">
-                Either choose from a beautifully designed template or customize yourself, RamroCode gives you many options to make your code look beautiful.            </p>
+                Either choose from a beautifully designed template or customize yourself, RamroCode gives you many
+                options to make your code look beautiful. </p>
 
-
-            <img src="./assets/features_pattern.png" class="featureSectionPattern d-none d-md-block">
+            <!-- <img src="./assets/features_pattern.png" class="featureSectionPattern d-none d-md-block"> -->
 
             <div class="row">
                 <div class="col-12 col-md-4">
@@ -117,6 +120,9 @@
                     </p>
                 </div>
             </div>
+
+            <!-- waves -->
+            <img src="./assets/featuresSectionWave.svg" class="featureSectionBottomWave">
         </section>
 
         <section class="roadmapSection text-center" id="roadmapSection">
@@ -125,14 +131,15 @@
             <p class="roadmapSectionSubtitle">
                 We are doing our best to make the best version of RamroCode. These are some of the features we are
                 working on. Some of them are recommended by the awesome users and some of them are our own. If you
-                have something to add, contact us.
+                have something to add, <a href="https://github.com/the-value-crew/ramroCode/issues/new" target="_blank"
+                    rel="noopener noreferrer">contact us</a>
+                .
             </p>
 
             <img src="./assets/roadmap.svg" class="roadmapSectionImage">
 
-            <img src="./assets/roadmap_pattern.svg" class="roadmapSectionPattern d-none d-md-block">
+            <!-- <img src="./assets/roadmap_pattern.svg" class="roadmapSectionPattern d-none d-md-block"> -->
         </section>
-
 
         <section class="usageSection" id="usageSection">
             <div class="usageSectionSlant"></div>
@@ -259,6 +266,42 @@
                     </a>
                 </div>
 
+            </div>
+        </section>
+
+        <section class="contactSection" id="contactSection">
+            <h1 class="contactSectionTitle text-center">Contact</h1>
+
+            <p class="contactSectionSubtitle text-center mb-5">
+                You got any suggestions, or any design ideas for code snippets. Let us know, we will give our best to
+                realize it.
+            </p>
+
+            <div class="row text-center">
+                <div class="col-12 col-md-4 p-5">
+                    <img src="./assets/github_icon.png" class="contactSectionIcon">
+                    <p>If you are a developer, feel free to submit any issues on <a
+                            href="https://github.com/the-value-crew/ramroCode/issues/new" target="_blank"
+                            rel="noopener noreferrer" class="link">Github</a> . Or you can just drop by and say thanks;
+                        the developer way 😎</p>
+                </div>
+
+                <div class="col-12 col-md-4 p-5">
+                    <img src="./assets/gmail_icon.png" class="contactSectionIcon">
+                    <p>
+                        Email: <a href="mailto: bibhutipd@gmail.com" class="link">bibhutipd@gmail.com</a>
+                        <br>
+                        We are open to any suggestions, new code-snippet designs and other cool features.
+                    </p>
+                </div>
+
+                <div class="col-12 col-md-4 p-5">
+                    <img src="./assets/help_icon.png" class="contactSectionIcon">
+
+                    <p>We are investing a piece of our free time to maintain this project. If you can help us in any
+                        way,
+                        that'd be awesome</p>
+                </div>
             </div>
         </section>
 

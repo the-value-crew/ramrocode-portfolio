@@ -8,7 +8,7 @@
 $color-primary: #373737;
 $color-secondary: #62667c;
 $color-green: #298c4d;
-$color-grey: rgb(247, 248, 252);
+$color-grey: #f7f8fc;
 
 $primary: $color-primary;
 @import "./vendor/bootstrap/functions.scss";
@@ -22,4 +22,5 @@ $primary: $color-primary;
 @import "./featureSection";
 @import "./roadmapSection";
 @import "./usageSection";
+@import "./contactSection";
 

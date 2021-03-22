@@ -10883,6 +10883,12 @@ a.noStyle {
   text-decoration: none;
 }
 
+a.link {
+  color: #298c4d;
+  text-decoration: underline;
+  font-style: italic;
+}
+
 .topNav {
   position: relative;
   z-index: 1000;
@@ -11004,12 +11010,29 @@ a.noStyle {
 }
 
 .featureSection {
+  position: relative;
   margin-top: 5rem;
 }
 
 @media (min-width: 768px) {
   .featureSection {
-    margin-top: 10rem;
+    margin-top: 7rem;
+  }
+}
+
+.featureSectionBackground {
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  background-color: #f7f8fc;
+  z-index: -1;
+  position: absolute;
+  left: calc(-1 * (100vw - 98%) / 2);
+}
+
+@media (min-width: 1200px) {
+  .featureSectionBackground {
+    left: calc(-1 * (100vw - 1200px) / 2);
   }
 }
 
@@ -11020,6 +11043,38 @@ a.noStyle {
 
 @media (min-width: 1200px) {
   .featureSectionPattern {
+    left: calc(-1 * (100vw - 1200px) / 2);
+  }
+}
+
+.featureSectionBottomWave {
+  position: absolute;
+  bottom: 0;
+  -webkit-transform: translateY(80%);
+          transform: translateY(80%);
+  width: 100vw;
+  z-index: -1;
+  left: calc(-1 * (100vw - 98%) / 2);
+}
+
+@media (min-width: 1200px) {
+  .featureSectionBottomWave {
+    left: calc(-1 * (100vw - 1200px) / 2);
+  }
+}
+
+.featureSectionTopWave {
+  position: absolute;
+  top: 0;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  width: 100vw;
+  z-index: -1;
+  left: calc(-1 * (100vw - 98%) / 2);
+}
+
+@media (min-width: 1200px) {
+  .featureSectionTopWave {
     left: calc(-1 * (100vw - 1200px) / 2);
   }
 }
@@ -11302,5 +11357,37 @@ a.noStyle {
   color: #8c8c8c;
   font-size: 0.7rem;
   margin-top: 0.25rem;
+}
+
+.contactSection {
+  margin-top: 5rem;
+}
+
+@media (min-width: 768px) {
+  .contactSection {
+    margin-top: 7rem;
+  }
+}
+
+.contactSectionTitle {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+  .contactSectionTitle {
+    font-size: 4rem;
+  }
+}
+
+.contactSectionSubtitle {
+  font-size: 1.2rem;
+  color: #62667c;
+}
+
+.contactSectionIcon {
+  width: 3rem;
+  height: auto;
+  margin-bottom: 1rem;
 }
 /*# sourceMappingURL=main.css.map */
