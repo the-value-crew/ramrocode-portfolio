@@ -1,10 +1,27 @@
 .usageSection {
     position: relative;
-    padding: 5rem 2.5rem;
+    padding: 1rem 2.5rem;
     margin-top: 5rem;
 
     @include media-breakpoint-up(md) {
-        margin-top: 10rem;
+        margin-top: 7rem;
+    }
+
+    &Slant {
+        width: 100vw;
+        height: 300px;
+        position: absolute;
+        left: calc(-1 * (100vw - 98%) / 2);
+        top: 25px;
+        z-index: -1;
+
+        @include media-breakpoint-up(xl) {
+            left: calc(-1 * (100vw - 1200px) / 2); // from _core.scss (value of max width)
+        }
+
+        transform-origin: left bottom;
+        transform: skewY(352deg);
+        background-color: rgb(247, 248, 252);
     }
 
     &Background {
@@ -39,14 +56,16 @@
         display: flex;
         background: #ffffff;
         border-radius: 0.75rem;
-        
+
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
         margin: 1rem 0;
         transition: all 0.2s ease-in-out;
 
         &:hover {
             cursor: pointer;
-            margin-top: -0.015rem;
+            @include media-breakpoint-up(md) {
+                margin-top: 0.015rem;
+            }
         }
 
         &Left {

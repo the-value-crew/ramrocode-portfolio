@@ -2,11 +2,13 @@
 
 // Fonts
 @import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,400;1,300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
 // Color
 $color-primary: #373737;
 $color-secondary: #62667c;
 $color-green: #298c4d;
+$color-grey: rgb(247, 248, 252);
 
 $primary: $color-primary;
 @import "./vendor/bootstrap/functions.scss";
